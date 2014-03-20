@@ -1,0 +1,18 @@
+A Rockchip update.img could be unpacked with the tool imgrepackerrk.
+
+The system image should be mounted at /system mount point (as it is the most convenient for me).
+
+Create this mount point:
+
+sudo mkdir /system
+
+Mount your image when in its directory:
+
+sudo mount system.img /system
+
+better to leave mount without any options, it will auto-probe the image and mount it correctly.
+
+In the script directory there should be a system folder. Files, obviously, are copied from there.
+
+Give it execution permissions and run it:
+./zip2system.sh
