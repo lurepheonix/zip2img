@@ -1,6 +1,6 @@
 cp -r system/* /system
-chmod -R 644 /system
-chown -R 0:0 /system
+chown -R 0:0 /system/*
+chmod -R 644 /system/*
 cd /system
 chmod 755 app bin cwm etc framework lib media usr vendor xbin
 chown -R 0:2000 /system/bin
@@ -17,7 +17,6 @@ chown 1014:2000 etc/dhcpcd/dhcpcd-run-hooks
 chmod 0550 etc/dhcpcd/dhcpcd-run-hooks
 chmod -R 0555 etc/ppp
 chmod 755 etc/ppp
-chown 0:2000 vendor
 chown -R 0:2000 xbin
 chmod -R 755 xbin
 chown 0:0 bin/su
