@@ -14,5 +14,5 @@ better to leave mount without any options, it will auto-probe the image and moun
 
 In the script directory there should be a system folder. Files, obviously, are copied from there.
 
-Give it execution permissions and run it:
-./zip2system.sh
+Run it as root:
+sudo sh zip2system.sh
