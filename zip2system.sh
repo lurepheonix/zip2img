@@ -1,4 +1,4 @@
-cp system/* /system
+cp -r system/* /system
 chmod -R 644 /system
 chown -R 0:0 /system
 cd /system
@@ -24,8 +24,8 @@ chown 0:0 bin/su
 chmod 06755 bin/su
 chown 0:0 xbin/su
 chmod 06755 xbin/su
-chown 0:0 bin/.ext/su
-chmod 06755 bin/.ext/su
+chown 0:0 bin/.ext/.su
+chmod 06755 bin/.ext/.su
 chown 0:0 xbin/daemonsu
 chmod 06755 xbin/daemonsu
 chown 0:0 xbin/tcpdump
