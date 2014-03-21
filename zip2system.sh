@@ -2,7 +2,7 @@ cp -r system/* /system
 chown -R 0:0 /system/*
 chmod -R 644 /system/*
 cd /system
-chmod 755 app bin cwm etc framework lib media usr vendor xbin
+find /system/ -type d -exec chmod 755 {} \;
 chown -R 0:2000 /system/bin
 chown 0:0 bin
 chmod -R 755 bin
