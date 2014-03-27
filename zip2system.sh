@@ -281,3 +281,6 @@ ln -s toolbox watchprops
 ln -s toolbox wipe
 ln -s flash_image dump_image
 ln -s mksh sh
+cd ..
+cd lib
+ln -s libGLESv2.so libGLESv3.so
