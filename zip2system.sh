@@ -38,6 +38,8 @@ chmod 06755 xbin/librank
 chown 0:1000 bin/busybox
 chmod 06755 bin/busybox
 chmod 755 etc/init.d/*
+chmod 755 etc/init.d.loop/*
+chmod 755 etc/modemsleep.sh
 cd fonts
 ln -s Roboto-Bold.ttf DroidSans-Bold.ttf
 ln -s Roboto-Regular.ttf DroidSans.ttf
