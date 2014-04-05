@@ -1,3 +1,5 @@
+This script is made mainly for my YukiNeko firmware, so some files may be missing from yours.
+
 A Rockchip update.img could be unpacked with the tool imgrepackerrk.
 
 The system image should be mounted at /system mount point (as it is the most convenient for me).
