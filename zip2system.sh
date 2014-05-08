@@ -1,4 +1,8 @@
+echo "Deleting everything from image file"
+rm -r /system/*
+echo "Copying system files"
 cp -r system/* /system
+echo "Setting permissions"
 chown -R 0:0 /system/*
 chmod -R 644 /system/*
 cd /system
@@ -40,6 +44,7 @@ chmod 06755 bin/busybox
 chmod 755 etc/init.d/*
 chmod 755 etc/init.d.loop/*
 chmod 755 etc/modemsleep.sh
+echo "Creating symlinks"
 cd fonts
 ln -s Roboto-Bold.ttf DroidSans-Bold.ttf
 ln -s Roboto-Regular.ttf DroidSans.ttf
@@ -287,3 +292,4 @@ ln -s mksh sh
 cd ..
 cd lib
 ln -s libGLESv2.so libGLESv3.so
+echo "Done"
